@@ -1,4 +1,4 @@
-# QFHackathon
+# Quantum Futures Hackathon 2019
 Generating quantum music using Qiskit. 
 A platform designed to help the general public understand the quantum phenomena of superposition and quantum computation, all using the language of music instead of mathematics. 
 Each musical note is assigned a qubit. Using an interactive quantum piano interface (built using Pygame), the user can press a key on their keyboard, which plays a piano key on the screen. This generates the relevant quantum logic gate on the screen. Changing the volume will demonstrate superposition, as maximum volume = |1> and minimum volume (i.e. no sound) = |0>, so any volume in between will be a superposition of the two, which is not possible classically. 
