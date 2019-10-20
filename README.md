@@ -1,4 +1,4 @@
-![Image of Logo](logo.png)
+![Image of Logo](logo.png) ![Image of Logo](qmusic.png)
 # Quantum Futures Hackathon 2019
 ## Humanizing Quantum - PianQ
 
