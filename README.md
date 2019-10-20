@@ -10,3 +10,7 @@ The change in the volume shows and analogy of the quantum superposition between 
 This interactive platform is mainly designed to teach about quantum circuitry, so that when the process is reversed, they can appreciate what they are listening to. 
 
 Finally, an audio demo is perfom where a quantum algorithm is translated into music, so you can listen to what a quantum algorithm sounds like.
+
+[1] https://www.pygame.org/docs/LGPL.txt
+[2] https://www.ibm.com/quantum-computing/learn/what-is-ibm-q/
+[3] Qiskit: An Open-source Framework for Quantum Computing. DOI: 10.5281/zenodo.2562110
