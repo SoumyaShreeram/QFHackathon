@@ -1,4 +1,4 @@
-![Image of LOGO](https://github.com/SoumyaShreeram/QFHackathon/Logo.jpg)
+![Image of Logo](https://octodex.github.com/SoumyaShreeram/QFHackathon/Logo.jpg)
 # Quantum Futures Hackathon 2019
 
 Generating quantum music using Qiskit. 
