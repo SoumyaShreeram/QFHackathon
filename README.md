@@ -1,5 +1,6 @@
-![Image of Logo](logo2.png)
+![Image of Logo](logo.png)
 # Quantum Futures Hackathon 2019
+## Humanizing Quantum - Quantum Piano
 
 Generating quantum music using Qiskit. 
 We have created a platform designed to help the general public understand the quantum phenomena of superposition and quantum computation, all using the language of music instead of mathematics. 
