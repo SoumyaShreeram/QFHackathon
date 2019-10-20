@@ -6,7 +6,7 @@ import pygame
 import datetime
 import time
 from tkinter import *
-
+import winsound
 pygame.init()
 root = Tk()
 root.title("Quantum Music")
@@ -98,23 +98,41 @@ def textButtons(input_frame, input_text, color_bg, fontsize, i, j, k, l, font_co
     # return butts
 
 def ValueC():
-    Circuit_Runner('C')
+    #print('sound')
+    vol_param = Circuit_Runner('C')
+    pygame.mixer.music.load('c.mp3')
+    pygame.mixer.music.set_volume(vol_param[0])
+    pygame.mixer.music.play()
+
     return
 
 def ValueCs():
-    Circuit_Runner('C#')
+    vol_param = Circuit_Runner('C#')
+    pygame.mixer.music.load('c-sharp.mp3')
+    pygame.mixer.music.set_volume(vol_param[1])
+    pygame.mixer.music.play()
     return
 
 def ValueD():
-    Circuit_Runner('D')
+    vol_param = Circuit_Runner('D')
+    pygame.mixer.music.load('d.mp3')
+    pygame.mixer.music.set_volume(vol_param[1])
+    pygame.mixer.music.play()
     return
 
+
 def ValueDs():
-    Circuit_Runner('D#')
+    vol_param = Circuit_Runner('D#')
+    pygame.mixer.music.load('d-sharp.mp3')
+    pygame.mixer.music.set_volume(vol_param[1])
+    pygame.mixer.music.play()
     return
 
 def ValueE():
-    Circuit_Runner('E')
+    vol_param = Circuit_Runner('E')
+    pygame.mixer.music.load('e.mp3')
+    pygame.mixer.music.set_volume(vol_param[1])
+    pygame.mixer.music.play()
     return
     
 ######################### qiskit definitions
@@ -141,23 +159,24 @@ def Circuit_Runner(note):
         print(input_var)
         if input_var == 'C':
             print('HEllo1')
-            qc.x(q[0])
+            qc.x(q[4])
             count = Circuit_stuff(qc,backend,number_of_keys,shots, q,c)
         if input_var == 'C#':
-            qc.x(q[1])
+            qc.x(q[3])
             count = Circuit_stuff(qc,backend,number_of_keys,shots,q,c )
         if input_var == 'D':
             qc.x(q[2])
             count = Circuit_stuff(qc,backend,number_of_keys,shots,q,c)
         if input_var == 'D#':
-            qc.x(q[3])
+            qc.x(q[1])
             count = Circuit_stuff(qc,backend,number_of_keys,shots,q,c)
         if input_var == 'E':
-            qc.x(q[4])
+            qc.x(q[0])
             count = Circuit_stuff(qc,backend,number_of_keys,shots,q,c)
-    print('HEllo')
-    #a = Volume_Calculations(count,number_of_keys,shots)
-    #return a
+    print(count)
+
+    a = Volume_Calculations(count,number_of_keys,shots)
+    return a
 
 def Volume_Calculations(count,number_of_keys,shots):
     key_results = np.zeros([number_of_keys])
